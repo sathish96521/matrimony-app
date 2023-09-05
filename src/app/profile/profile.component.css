@@ -1,0 +1,90 @@
+.carousel-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding: 15px;
+    background-color: #e5f7e2; 
+  }
+  
+  .profile-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s;
+    max-width: 300px;
+  }
+  
+  .profile-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .profile-image {
+    width: 100%;
+    height: 180px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  /* .profile-info { */
+    /* padding: 20px; */
+  /* } */
+  
+  .profile-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .profile-info p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+  }
+  
+  .rounded {
+    border-radius: 20px !important;
+  }
+  
+  /* .btn-yes,
+  .btn-no {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  } */
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .carousel-container {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  
+    .profile-card {
+      max-width: 200px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .profile-card {
+      max-width: 100%;
+    }
+  }
+  

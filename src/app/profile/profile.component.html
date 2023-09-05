@@ -1,0 +1,21 @@
+<div>
+  <!-- <div class="carousel-header">
+    <h1>My Matches</h1>
+    <div class="menu">
+      <span>&#8942;</span>
+    </div>
+  </div> -->
+  <div class="carousel-container">
+    <div *ngFor="let profile of profiles" class="profile-card">
+      <img [src]="profile.imageUrl" alt="{{ profile.name }}" class="profile-image">
+      <div class="profile-info">
+        <h3>{{ profile.name }}</h3>
+        <p>{{ profile.address }}</p>
+      </div>
+      <div class="buttons">
+        <button type="button" class="btn btn-success rounded" (click)="navigateToProfile()">Yes</button>
+        <button type="button" class="btn btn-info rounded">No</button>
+      </div>
+    </div>
+  </div>
+</div>
